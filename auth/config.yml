@@ -1,0 +1,11 @@
+auth:
+  host:
+  port: 3000
+  token:
+    refresh_secret: 321321
+    access_secret: 123123
+  timeout:
+    server: 30
+    read: 15
+    write: 10
+    idle: 5

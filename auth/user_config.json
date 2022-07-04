@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "login": "Jon",
+        "password": "$2a$12$yVDBPwGWx9taE3LrIroKBuMBYU07qEAT8gxttHVMa0uTfijdUyj3S"
+    },
+    {
+        "id": "2",
+        "login": "Tom",
+        "password": "$2a$12$wWfhq4SJLkW2VBcjiH8RKeEZuVPKwrksdCM7kcEMJAWxaT4TVbgOa"
+    },
+    {
+        "id": "3",
+        "login": "Bob",
+        "password": "$2a$14$w3MwBAt3EIBNFZnVz7tSDOb98GwetZaXryy4dhjeybIJCn.znnD5S"
+    },
+    {
+        "id": "4",
+        "login": "test123",
+        "password": "$2a$14$reORBAPQZicSEJHdcCzzeeCJ0CctzcKRgT10QvcSraKApnpmhFgRm"
+    }
+]
