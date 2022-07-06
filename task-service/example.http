@@ -1,0 +1,42 @@
+GET http://localhost:4000/healthz HTTP/1.1
+content-type: application/json
+
+###
+
+POST http://localhost:3000/auth/v1/login HTTP/1.1
+content-type: application/json
+
+{
+    "login": "test123",
+    "password": "qwerty"
+}
+
+###
+
+POST  http://localhost:4000/task HTTP/1.1
+content-type: application/json
+
+{
+    "authorId": "test123",
+    "Description": "test123 task",
+    "mailList": ["123@yandex.ru"],
+    "title": "qwerty"
+}
+
+###
+
+DELETE   http://localhost:4000/task/720380 HTTP/1.1
+content-type: application/json
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTcwMTE0MTksImxvZ2luIjoidGVzdDEyMyIsImlkIjoiNCJ9.oeWww7dm4XQ1MQw8Ama6ZX-Xm_qwVT7dvriaOuIEzkg; Expires=Tue, 05 Jul 2022 08:56:59 GMT; HttpOnly,accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTcwMDc4NzksImxvZ2luIjoidGVzdDEyMyIsImlkIjoiNCJ9.Wf4cRIfzBaU9NiZBNo3tKuBj8iFC-_mhPaPb0U79Cb0; Expires=Tue, 05 Jul 2022 07:57:59 GMT; HttpOnly
+
+###
+PATCH http://localhost:4000/task HTTP/1.1
+Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTcwMTE0MTksImxvZ2luIjoidGVzdDEyMyIsImlkIjoiNCJ9.oeWww7dm4XQ1MQw8Ama6ZX-Xm_qwVT7dvriaOuIEzkg; Expires=Tue, 05 Jul 2022 08:56:59 GMT; HttpOnly,accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTcwMDc4NzksImxvZ2luIjoidGVzdDEyMyIsImlkIjoiNCJ9.Wf4cRIfzBaU9NiZBNo3tKuBj8iFC-_mhPaPb0U79Cb0; Expires=Tue, 05 Jul 2022 07:57:59 GMT; HttpOnly
+
+{
+    "id": "720380",
+    "authorId": "test123",
+    "Description": "test123 task",
+    "mailList": ["123@yandex.ru"],
+    "title": "111111"
+}

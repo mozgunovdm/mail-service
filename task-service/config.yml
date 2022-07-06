@@ -1,0 +1,39 @@
+project:
+  name: Auth service
+  debug: true
+  environment: development
+
+grpc:
+  host: 0.0.0.0
+  port: 8082
+  maxConnectionIdle: 5 # Minutes
+  timeout: 15 # Seconds
+  maxConnectionAge: 5 # Minutes
+
+  #mongodb://root:example@localhost:27017
+mongo:
+  host: 0.0.0.0
+  user: user
+  password: password
+  name: team2
+  collection: task-service
+  port: 27017
+
+rest:
+  host: 0.0.0.0
+  port: 4000 
+
+token:
+  refresh_secret: 321321
+  access_secret: 123123
+
+database:
+  host: postgres
+  port: 5432
+  user: docker
+  password: docker
+  name: omp_template_api
+  sslmode: disable
+  migrations: migrations
+  driver: pgx
+
